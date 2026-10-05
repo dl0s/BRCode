@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0.3",
+  "releaseDate": "2026-10-05",
+  "timezone": "Asia/Shanghai",
+  "applicationId": "top.blaccat.BRCode",
+  "binary": "brcode",
+  "inputMethod": "Cascades system TextArea/TextField",
+  "changes": [
+    "Remove BBIME services, key routing, candidate UI and dictionary resources",
+    "Restore system input, preserve multiline text and disable automatic text replacement",
+    "Remove the remaining NativeSymbolPanel reference that prevented scene creation"
+  ],
+  "dependencies": {
+    "target": "BlackBerry Q10 ARMv7 little-endian",
+    "compiler": "QNX qcc GCC 4.6.3 C++98",
+    "qt": "4.8.6",
+    "sqlite": "3.7.14.1",
+    "cppAbi": "libcpp.so.4",
+    "manager": "1.1.6.5",
+    "firmware": "1.1.6-M",
+    "operationProtocol": 1
+  },
+  "production": {
+    "artifact": "build/BRCode.bar",
+    "sha256": "917dc1c0bde548e7ab7ec86f7e4c9c7e50e04d528e775e0b43343a0910b9d377",
+    "buildTask": "da3836332842438f8f1dcb6047f90f9a",
+    "buildStatus": "succeeded",
+    "barAudit": "PASS"
+  },
+  "diagnostic": {
+    "artifact": "build/BRCode-tests.bar",
+    "applicationId": "top.blaccat.BRCodeTests",
+    "sha256": "435e5d9e67155402750ad068894592564129ca5d67116175642f6f58b721e0c1",
+    "buildTask": "24b215b9919446ccb0e30c1adee87ea4",
+    "buildStatus": "succeeded",
+    "execution": "NOT TESTED"
+  },
+  "deployment": {
+    "taskId": "e114966c78e0401a8dcda2c87eab6627",
+    "deviceHost": "192.168.1.61",
+    "devicePin": "2C3353AC",
+    "status": "succeeded",
+    "outcome": "confirmed",
+    "completedAt": "2026-10-05T13:57:09.3687842+08:00",
+    "uploadReadbackSha256": "917dc1c0bde548e7ab7ec86f7e4c9c7e50e04d528e775e0b43343a0910b9d377",
+    "ppsResult": "success",
+    "ppsProgress": 100,
+    "directoryName": "top.blaccat.BRCode.testDev_ccat_BRCode24ede41a"
+  },
+  "verification": {
+    "hostTests": "PASS",
+    "hostAssertions": 252,
+    "hostScope": "actual C++98 HistoryStore / SQLite 3.7.14.1, ScanGate",
+    "startup": "PASS (USER REPORTED)",
+    "systemInput": "PASS (USER REPORTED)",
+    "generation": "PASS (USER REPORTED)",
+    "sceneConstruction": "PASS (DEVICE LOG)",
+    "qmlErrors": 0,
+    "applicationUid": 100,
+    "applicationLogTask": "4d1050273e654b8e8082347eba672b4e",
+    "notTested": [
+      "Native diagnostic execution",
+      "Physical camera scanning and lifecycle",
+      "Detailed Chinese input, Enter, paste and notes",
+      "Cross-device screen/PNG round-trip",
+      "Upgrade history retention",
+      "Long-running stability"
+    ]
+  },
+  "deliveryReport": "docs/DELIVERY.md",
+  "localEvidence": "build/verification.json",
+  "artifactPolicy": "BAR files, raw queue evidence, local credentials and caches remain outside Git"
+}

@@ -1,0 +1,34 @@
+# Local builds, queue requests, device evidence and retired module archives.
+/build/
+
+# Host caches and IDE state.
+__pycache__/
+*.pyc
+*.user
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
+
+# App sandbox data and local credentials.
+/data/
+/shared/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+known_hosts
+
+# Generated binaries and logs.
+*.bar
+*.o
+*.exe
+*.dll
+*.log

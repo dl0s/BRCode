@@ -1,0 +1,4 @@
+# Keep original source/resource bytes for the BAR's byte-for-byte asset audit.
+* -text
+*.png binary
+*.bar binary

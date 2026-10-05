@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+  <id>top.blaccat.BRCode</id>
+  <name>BRCode</name>
+  <versionNumber>1.0.0</versionNumber>
+  <buildId>3</buildId>
+  <description>Q10 offline text QR scanner and generator</description>
+  <author>Local Developer</author>
+  <icon><image>icon.png</image></icon>
+  <env var="CASCADES_THEME" value="dark"/>
+  <asset path="assets/icon.png">icon.png</asset>
+  <asset path="build/brcode" entry="true" type="Qnx/Elf">brcode</asset>
+  <asset path="assets/main.qml">assets/main.qml</asset>
+  <asset path="assets/SystemTextArea.qml">assets/SystemTextArea.qml</asset>
+  <asset path="assets/SystemTextField.qml">assets/SystemTextField.qml</asset>
+  <permission>use_camera</permission>
+  <permission>access_shared</permission>
+  <initialWindow><systemChrome>none</systemChrome></initialWindow>
+</qnx>
